@@ -4,6 +4,8 @@ import Footer from "./components/layout/Footer.jsx";
 import WhatsAppButton from "./components/layout/WhatsAppButton.jsx";
 import ScrollToTopButton from "./components/layout/ScrollToTopButton.jsx";
 import ScrollToTop from "./components/layout/ScrollToTop.jsx";
+import PageLoader from "./components/layout/PageLoader.jsx";
+import SplashScreen from "./components/layout/SplashScreen.jsx";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -23,6 +25,8 @@ import NotFound from "./pages/NotFound.jsx";
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen">
+      <SplashScreen />
+      <PageLoader />
       <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
