@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F4F6F8;
+  color: #2B3440;
+}
+
+.btn-primary {
+  background-color: #E32227;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-primary:hover {
+  background-color: #c01b1f;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #0E2A47;
+  color: #0E2A47;
+  padding: 0.65rem 1.4rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-outline:hover {
+  background-color: #0E2A47;
+  color: white;
+}
+
+.section-pad {
+  padding: 4rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-pad {
+    padding: 6rem 3rem;
+  }
+}
+
+.fingerprint-divider {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, #E32227, #1C8FD6);
+  border-radius: 4px;
+}
