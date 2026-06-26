@@ -9,7 +9,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Replace YOUR_FORM_ID with your Formspree form ID
-    fetch("https://formspree.io/f/YOUR_FORM_ID", {
+    fetch("https://formspree.io/f/mrewqkvd", {
       method: "POST",
       headers: { Accept: "application/json" },
       body: new FormData(e.target),
