@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-pad bg-offwhite text-center">
+      <section className="pt-8 pb-4 bg-offwhite text-center">
         <SectionHeading
           eyebrow="Coverage"
           title="Serving Nairobi & East Africa"

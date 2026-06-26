@@ -3,6 +3,7 @@ import lowbed from "../assets/images/lowbed-truck.jpg";
 import telehandler from "../assets/images/telehandler-yard.jpg";
 import xcmg from "../assets/images/xcmg-offload.jpg";
 import scissor from "../assets/images/scissor-lift-warehouse.jpg";
+import rescue from "../assets/images/rescue-recovery.jpg";
 
 export const services = [
   {
@@ -49,5 +50,14 @@ export const services = [
     description:
       "Aerial work platforms and lifting solutions for working at height — facade work, installations, maintenance, and material placement on active construction sites.",
     fleetCategory: "scissor-lifts",
+  },
+  {
+    slug: "rescue-recovery",
+    name: "Vehicle Rescue & Recovery",
+    photo: rescue,
+    equipment: ["Flatbed Recovery Truck", "Winch & Rigging", "Towing Equipment"],
+    description:
+      "Fast, professional vehicle rescue and recovery services for construction machinery, trucks, and 4x4s — on-site or roadside across Nairobi and beyond.",
+    fleetCategory: "cranes",
   },
 ];
