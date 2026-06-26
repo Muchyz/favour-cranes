@@ -95,9 +95,9 @@ export default function Hero() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="grid grid-cols-4 rounded-xl overflow-hidden border border-white/10">
             {[
               { v: "550T", l: "Max Lift" },
-              { v: "10+", l: "Units" },
+              { v: "30+", l: "Units" },
               { v: "9yr", l: "Est." },
-              { v: "7+", l: "Clients" },
+              { v: "7k+", l: "Clients" },
             ].map((s, i) => (
               <div key={s.l} className={`text-center ${i % 2 === 0 ? "bg-white/10" : "bg-white/5"}`} style={{ padding: "6px 0" }}>
                 <p className="font-extrabold text-white leading-none" style={{ fontSize: "14px" }}>{s.v}</p>
