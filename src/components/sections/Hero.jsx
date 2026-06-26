@@ -6,7 +6,7 @@ import heroImg1 from "../../assets/images/crane-lifting-container.jpg";
 import heroImg2 from "../../assets/images/crane-hook-90t.jpg";
 import heroImg5 from "../../assets/images/boom-lift-field.jpg";
 
-const heroImages = [heroImg1, heroImg2, heroImg5];
+const heroImages = [heroImg2, heroImg5, heroImg1];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
