@@ -5,15 +5,24 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Replace YOUR_FORM_ID with your Formspree form ID
+    setError(false);
     fetch("https://formspree.io/f/mrewqkvd", {
       method: "POST",
       headers: { Accept: "application/json" },
       body: new FormData(e.target),
-    }).then(() => setSubmitted(true));
+    })
+      .then((res) => {
+        if (res.ok) {
+          setSubmitted(true);
+        } else {
+          setError(true);
+        }
+      })
+      .catch(() => setError(true));
   };
 
   return (
@@ -35,6 +44,11 @@ export default function Contact() {
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
+              {error && (
+                <p className="text-red-600 font-semibold bg-red-50 border border-red-200 rounded-lg px-4 py-2">
+                  Something went wrong. Please try again or call us at 0712 919 576.
+                </p>
+              )}
               <input name="name" required placeholder="Full Name" className="w-full border rounded-lg px-4 py-2" />
               <input name="email" type="email" required placeholder="Email Address" className="w-full border rounded-lg px-4 py-2" />
               <input name="phone" required placeholder="Phone Number" className="w-full border rounded-lg px-4 py-2" />
