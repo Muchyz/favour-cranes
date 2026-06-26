@@ -1,19 +1,40 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone } from "lucide-react";
-import heroImg from "../../assets/images/crane-lifting-container.jpg";
+import heroImg1 from "../../assets/images/crane-lifting-container.jpg";
+import heroImg2 from "../../assets/images/crane-hook-90t.jpg";
+import heroImg5 from "../../assets/images/boom-lift-field.jpg";
+
+const heroImages = [heroImg1, heroImg2, heroImg5];
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative overflow-hidden" style={{ height: "calc(100svh - 72px)" }}>
 
       <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt="Crane lifting container"
-          className="w-full h-full object-cover"
-          style={{ objectPosition: "center 80%" }}
-        />
+        <AnimatePresence>
+          <motion.img
+            key={index}
+            src={heroImages[index]}
+            alt="Favour Cranes equipment in action"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: "center 80%" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+          />
+        </AnimatePresence>
         {/* Base gradient — kept gentle so image stays visible */}
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(14,42,71,0.55) 0%, rgba(14,42,71,0.35) 40%, rgba(14,42,71,0.15) 70%, rgba(14,42,71,0.05) 100%)" }} />
       </div>
