@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import SectionHeading from "../components/ui/SectionHeading.jsx";
 import { X } from "lucide-react";
 
@@ -42,6 +43,12 @@ export default function Gallery() {
   const [lightbox, setLightbox] = useState(null);
 
   return (
+    <>
+      <Helmet>
+        <title>Project Gallery | Crane Lifts & Heavy Equipment – Favour Cranes Nairobi</title>
+        <meta name="description" content="View photos of our crane lifts, forklift operations, boom lift access and lowbed transport projects across Nairobi and East Africa." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/gallery" />
+      </Helmet>
     <div className="section-pad max-w-6xl mx-auto">
       <SectionHeading eyebrow="Our Work" title="Project Gallery" />
 
@@ -76,5 +83,6 @@ export default function Gallery() {
         ))}
       </div>
     </div>
+    </>
   );
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://favourcranesltd.co.ke/</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/about</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/services</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/fleet</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/areas-we-serve</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/gallery</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/testimonials</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/certifications</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/news</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/careers</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/contact</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/privacy</loc></url>
-  <url><loc>https://favourcranesltd.co.ke/terms</loc></url>
+  <url><loc>https://www.favourcranes.co.ke/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/services</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/contact</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/fleet</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/areas-we-serve</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/certifications</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/testimonials</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/news</loc><priority>0.6</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/gallery</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/careers</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/privacy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://www.favourcranes.co.ke/terms</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
 </urlset>

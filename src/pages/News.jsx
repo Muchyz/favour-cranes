@@ -1,9 +1,16 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 import { news } from "../data/news.js";
 import Card from "../components/ui/Card.jsx";
 
 export default function News() {
   return (
+    <>
+      <Helmet>
+        <title>News & Insights | Crane Hire Kenya – Favour Cranes Limited</title>
+        <meta name="description" content="Latest news, project updates and heavy lifting insights from Favour Cranes Limited, Nairobi's trusted crane hire and logistics company." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/news" />
+      </Helmet>
     <div className="section-pad max-w-5xl mx-auto">
       <SectionHeading eyebrow="Updates" title="News & Insights" />
 
@@ -22,5 +29,6 @@ export default function News() {
         ))}
       </div>
     </div>
+    </>
   );
 }

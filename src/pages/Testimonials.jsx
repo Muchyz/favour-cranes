@@ -1,4 +1,5 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 import { testimonials } from "../data/testimonials.js";
 import Card from "../components/ui/Card.jsx";
 import Button from "../components/ui/Button.jsx";
@@ -6,6 +7,12 @@ import { Quote } from "lucide-react";
 
 export default function Testimonials() {
   return (
+    <>
+      <Helmet>
+        <title>Client Testimonials | Favour Cranes Limited – Nairobi Crane Hire</title>
+        <meta name="description" content="See what clients like Mainport Kenya, CRBC and Imexolutions say about Favour Cranes Limited's crane hire, forklift and lowbed transport services." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/testimonials" />
+      </Helmet>
     <div className="section-pad max-w-6xl mx-auto">
       <SectionHeading eyebrow="Client Feedback" title="Testimonials" />
 
@@ -26,5 +33,6 @@ export default function Testimonials() {
         <Button to="/contact" variant="primary">Share Your Experience</Button>
       </div>
     </div>
+    </>
   );
 }

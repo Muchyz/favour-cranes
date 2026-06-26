@@ -1,7 +1,14 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 
 export default function Privacy() {
   return (
+    <>
+      <Helmet>
+        <title>Privacy Policy | Favour Cranes Limited</title>
+        <meta name="description" content="Privacy policy for Favour Cranes Limited. Learn how we collect, use and protect your personal information." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/privacy" />
+      </Helmet>
     <div className="section-pad max-w-3xl mx-auto">
       <SectionHeading title="Privacy Policy" center={false} />
       <div className="space-y-4 text-sm text-slate">
@@ -17,11 +24,12 @@ export default function Privacy() {
           processing services).
         </p>
         <p>
-          You may contact us at favourcranesltd@gmail.com at any time to request access to,
+          You may contact us at info@favourcranes.co.ke at any time to request access to,
           correction of, or deletion of your personal data.
         </p>
         <p>This policy may be updated periodically. Continued use of our site constitutes acceptance of any changes.</p>
       </div>
     </div>
+    </>
   );
 }

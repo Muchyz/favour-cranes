@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { useSearchParams } from "react-router-dom";
 import SectionHeading from "../components/ui/SectionHeading.jsx";
 import Card from "../components/ui/Card.jsx";
@@ -17,6 +18,12 @@ export default function Fleet() {
   const filtered = activeCat === "all" ? fleet : fleet.filter((f) => f.category === activeCat);
 
   return (
+    <>
+      <Helmet>
+        <title>Crane & Equipment Fleet | Mobile Cranes, Forklifts, Telehandlers – Favour Cranes Nairobi</title>
+        <meta name="description" content="Browse our fleet: mobile cranes up to 550T, forklifts, rough-terrain telehandlers, boom lifts, scissor lifts and lowbed trucks available for hire across East Africa." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/fleet" />
+      </Helmet>
     <div className="section-pad max-w-6xl mx-auto">
       <SectionHeading eyebrow="Equipment Catalog" title="Our Fleet" />
 
@@ -57,5 +64,6 @@ export default function Fleet() {
         ))}
       </div>
     </div>
+    </>
   );
 }

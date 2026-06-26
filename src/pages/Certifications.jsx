@@ -1,4 +1,5 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 import { ShieldCheck, FileDown } from "lucide-react";
 
 const certs = [
@@ -10,6 +11,12 @@ const certs = [
 
 export default function Certifications() {
   return (
+    <>
+      <Helmet>
+        <title>Certifications & Safety Standards | LOLER, OSHA, NITA – Favour Cranes Kenya</title>
+        <meta name="description" content="Favour Cranes Limited holds LOLER, OSHA, NITA and Lloyds British certifications. Every crane undergoes independent load testing. Download our company profile." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/certifications" />
+      </Helmet>
     <div className="section-pad max-w-5xl mx-auto">
       <SectionHeading
         eyebrow="Compliance"
@@ -36,5 +43,6 @@ export default function Certifications() {
         <a href="/company-profile.pdf" className="btn-primary inline-flex">Download PDF</a>
       </div>
     </div>
+    </>
   );
 }

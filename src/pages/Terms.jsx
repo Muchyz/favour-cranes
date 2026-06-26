@@ -1,7 +1,14 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 
 export default function Terms() {
   return (
+    <>
+      <Helmet>
+        <title>Terms & Conditions | Favour Cranes Limited</title>
+        <meta name="description" content="Terms and conditions for using Favour Cranes Limited's website and hiring our crane and heavy lifting equipment services." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/terms" />
+      </Helmet>
     <div className="section-pad max-w-3xl mx-auto">
       <SectionHeading title="Terms & Conditions" center={false} />
       <div className="space-y-4 text-sm text-slate">
@@ -22,5 +29,6 @@ export default function Terms() {
         <p>For full contractual terms specific to your project, please contact us directly.</p>
       </div>
     </div>
+    </>
   );
 }

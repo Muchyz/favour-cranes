@@ -1,4 +1,5 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 import { MapPin } from "lucide-react";
 
 const areas = [
@@ -8,6 +9,12 @@ const areas = [
 
 export default function AreasWeServe() {
   return (
+    <>
+      <Helmet>
+        <title>Crane Hire Areas | Nairobi, Mombasa, Kisumu & East Africa – Favour Cranes</title>
+        <meta name="description" content="Favour Cranes Limited mobilizes crane hire and heavy lifting equipment across Nairobi, Mombasa, Kisumu, Nakuru, Eldoret, Thika and wider East Africa." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/areas-we-serve" />
+      </Helmet>
     <div className="section-pad max-w-5xl mx-auto">
       <SectionHeading
         eyebrow="Coverage"
@@ -31,5 +38,6 @@ export default function AreasWeServe() {
         </p>
       </div>
     </div>
+    </>
   );
 }

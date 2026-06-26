@@ -1,10 +1,17 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
 import { clients } from "../data/clients.js";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import craneStudio from "../assets/images/zoomlion-crane-studio.jpg";
 
 export default function About() {
   return (
+    <>
+      <Helmet>
+        <title>About Favour Cranes Limited | Certified Crane Hire Kenya</title>
+        <meta name="description" content="Established in 2016 as Venus Cranes Ltd, Favour Cranes Limited is Nairobi's trusted crane hire and heavy lifting company. LOLER compliant, NITA certified operators." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/about" />
+      </Helmet>
     <div className="section-pad max-w-6xl mx-auto">
       <SectionHeading eyebrow="Our Story" title="About Favour Cranes Limited" />
 
@@ -71,5 +78,6 @@ export default function About() {
         <Link to="/careers" className="btn-primary inline-flex">View Careers</Link>
       </div>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import SectionHeading from "../components/ui/SectionHeading.jsx";
 import { Phone, Mail, MapPin } from "lucide-react";
 
@@ -16,6 +17,12 @@ export default function Contact() {
   };
 
   return (
+    <>
+      <Helmet>
+        <title>Get a Free Quote | Contact Favour Cranes Limited – Nairobi</title>
+        <meta name="description" content="Request a free crane hire or equipment rental quote. Call 0712 919 576 or email info@favourcranes.co.ke. Based in Embakasi, Nairobi – serving all of East Africa." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/contact" />
+      </Helmet>
     <div className="section-pad max-w-6xl mx-auto">
       <SectionHeading eyebrow="Get In Touch" title="Contact & Request a Quote" />
 
@@ -54,7 +61,7 @@ export default function Contact() {
           <h3 className="font-bold text-navy text-lg mb-4">Reach Us Directly</h3>
           <ul className="space-y-4 mb-8 text-slate">
             <li className="flex items-center gap-3"><Phone className="text-brandred" /> 0712 919 576</li>
-            <li className="flex items-center gap-3"><Mail className="text-brandred" /> favourcranesltd@gmail.com</li>
+            <li className="flex items-center gap-3"><Mail className="text-brandred" /> info@favourcranes.co.ke</li>
             <li className="flex items-start gap-3">
               <MapPin className="text-brandred mt-1" />
               Kimson Plaza, Eastern Bypass, Embakasi, Nairobi<br />P.O. Box 7456, 00100, Nairobi
@@ -71,5 +78,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -1,8 +1,15 @@
 import SectionHeading from "../components/ui/SectionHeading.jsx";
+import { Helmet } from "react-helmet-async";
 import Button from "../components/ui/Button.jsx";
 
 export default function Careers() {
   return (
+    <>
+      <Helmet>
+        <title>Careers at Favour Cranes Limited | Crane Operator Jobs Nairobi</title>
+        <meta name="description" content="Join Favour Cranes Limited – Nairobi's certified crane hire company. We seek skilled crane operators, logistics and equipment maintenance professionals." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/careers" />
+      </Helmet>
     <div className="section-pad max-w-4xl mx-auto text-center">
       <SectionHeading
         eyebrow="Join Our Team"
@@ -20,5 +27,6 @@ export default function Careers() {
 
       <Button to="/contact" variant="primary">Send Us Your CV</Button>
     </div>
+    </>
   );
 }

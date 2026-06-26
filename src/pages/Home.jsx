@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Hero from "../components/sections/Hero.jsx";
 import TrustStrip from "../components/sections/TrustStrip.jsx";
 import StatsSection from "../components/sections/StatsSection.jsx";
@@ -47,6 +48,11 @@ const whyChooseItems = [
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Crane Hire Nairobi | Favour Cranes Limited – LOLER &amp; OSHA Certified</title>
+        <meta name="description" content="Crane hire, forklift rental, lowbed transport &amp; aerial access across Nairobi and East Africa. NITA certified operators, LOLER &amp; OSHA compliant. Free quote: 0712 919 576." />
+        <link rel="canonical" href="https://www.favourcranes.co.ke/" />
+      </Helmet>
       <Hero />
       <TrustStrip />
       <StatsSection />

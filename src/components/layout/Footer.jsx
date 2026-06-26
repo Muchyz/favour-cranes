@@ -86,7 +86,7 @@ export default function Footer() {
               <span className="bg-white/10 p-2 rounded-full">
                 <Mail size={15} className="text-sky" />
               </span>
-              favourcranesltd@gmail.com
+              info@favourcranes.co.ke
             </li>
             <li className="flex items-start gap-3">
               <span className="bg-white/10 p-2 rounded-full mt-0.5">
