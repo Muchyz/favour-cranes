@@ -150,8 +150,24 @@ export default function Footer() {
           </svg>
         </a>
       </div>
-      © {new Date().getFullYear()} Favour Cranes Limited (formerly Venus Cranes Ltd). All rights
-        reserved.
+      © {new Date().getFullYear()} Favour Cranes Limited (formerly Venus Cranes Ltd). All rights reserved.
+        <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-center">
+          <a
+            href="https://muchyz.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-1.5 px-4 py-1.5 rounded-full border text-xs font-semibold tracking-wide transition-all duration-300 hover:scale-105"
+            style={{
+              background: "linear-gradient(135deg, rgba(56,189,248,0.15), rgba(14,42,71,0.4))",
+              borderColor: "rgba(56,189,248,0.35)",
+              boxShadow: "0 0 12px rgba(56,189,248,0.2)",
+              color: "#38BDF8"
+            }}
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#38BDF8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Built &amp; Designed by Muchyz Digital Agency
+          </a>
+        </div>
       </div>
     </footer>
   );
