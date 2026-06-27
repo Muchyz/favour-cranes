@@ -104,6 +104,34 @@ export default function Footer() {
 
       <div className="border-t border-white/10 text-center text-xs text-gray-400 py-5">
         
+        <div className="mb-5 flex flex-col items-center gap-2">
+          <p className="text-gray-600 text-xs tracking-widest uppercase">Crafted with ♥ by</p>
+          <a
+            href="https://muchyz.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative overflow-hidden flex items-center gap-2 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            style={{
+              background: "linear-gradient(90deg, #0E2A47, #1e4976, #0E2A47)",
+              border: "1px solid rgba(56,189,248,0.5)",
+              color: "#38BDF8",
+              boxShadow: "0 0 16px rgba(56,189,248,0.25), inset 0 1px 0 rgba(255,255,255,0.05)"
+            }}
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="#38BDF8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Muchyz Digital Agency
+            {/* shimmer sweep */}
+            <span
+              className="absolute inset-0 rounded-full pointer-events-none"
+              style={{
+                background: "linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.08) 50%, transparent 60%)",
+                animation: "shimmer 3s infinite"
+              }}
+            />
+          </a>
+          <style>{`@keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(200%)} }`}</style>
+        </div>
+
       {/* Social Icons */}
       <div className="flex items-center justify-center gap-4 mt-6 mb-4">
         {/* Facebook */}
@@ -151,23 +179,6 @@ export default function Footer() {
         </a>
       </div>
       © {new Date().getFullYear()} Favour Cranes Limited (formerly Venus Cranes Ltd). All rights reserved.
-        <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-center">
-          <a
-            href="https://muchyz.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-1.5 px-4 py-1.5 rounded-full border text-xs font-semibold tracking-wide transition-all duration-300 hover:scale-105"
-            style={{
-              background: "linear-gradient(135deg, rgba(56,189,248,0.15), rgba(14,42,71,0.4))",
-              borderColor: "rgba(56,189,248,0.35)",
-              boxShadow: "0 0 12px rgba(56,189,248,0.2)",
-              color: "#38BDF8"
-            }}
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="#38BDF8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-            Built &amp; Designed by Muchyz Digital Agency
-          </a>
-        </div>
       </div>
     </footer>
   );
